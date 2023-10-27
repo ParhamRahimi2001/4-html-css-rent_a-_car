@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    
+}
+.container div{
+    width:300px;
+}
+.container div img{
+    margin: 40px 50px ;
+}
+.container div h1{
+    margin: 0px 50px 30px ;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.container div p{
+    margin: 0px 50px 80px ;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    width: 165px;
+}
+.container div button{
+    margin: 0px 50px 50px ;
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    text-align: center;
+   cursor: pointer;
+    font-size: 20px;
+}
+.container div:first-child  button{
+    color:  hsl(31, 77%, 52%);
+}
+.container div:nth-child(2)  button{
+    color:  hsl(184, 100%, 22%);
+}
+.container div:nth-child(3)  button{
+    color:  hsl(179, 100%, 13%);
+}
+.container div:first-child button:active{
+    background-color: hsl(31, 77%, 52%);
+    color:white;
+    border:3px solid white;
+}
+.container div:nth-child(2) button:active{
+    background-color: hsl(184, 100%, 22%);
+    color:white;
+    border:3px solid white;
+}
+.container div:nth-child(3) button:active{
+    background-color: hsl(179, 100%, 13%);
+    color:white;
+    border:3px solid white;
+}
+
+.container div:first-child{
+background-color:   hsl(31, 77%, 52%);
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+
+}
+.container div:nth-child(2){
+background-color:    hsl(184, 100%, 22%);
+
+}
+.container div:nth-child(3){
+background-color:   hsl(179, 100%, 13%);
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+
+}
+@media screen and (max-width:375px){
+    .container{
+        flex-wrap: wrap; 
+        justify-content: center;
+        align-content: center;
+    }
+    .container div:first-child{
+        background-color:   hsl(31, 77%, 52%);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        
+        }
+        .container div:nth-child(2){
+        background-color:    hsl(184, 100%, 22%);
+        
+        }
+        .container div:nth-child(3){
+        background-color:   hsl(179, 100%, 13%);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+        }
+    
+}
